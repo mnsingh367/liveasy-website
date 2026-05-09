@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LiveEasy Plans</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #111315;
+      color: #ffffff;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #b5b5b5;
+      margin-bottom: 40px;
+      font-size: 18px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #ffd000;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1b1d20;
+      border-radius: 18px;
+      padding: 24px;
+      transition: 0.2s ease;
+      border: 1px solid #2a2d31;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #ffd000;
+    }
+
+    .card h3 {
+      margin-bottom: 18px;
+      font-size: 22px;
+    }
+
+    .plan-list {
+      list-style: none;
+    }
+
+    .plan-list li {
+      margin-bottom: 14px;
+    }
+
+    .plan-list a {
+      text-decoration: none;
+      color: #ffffff;
+      display: block;
+      background: #2a2d31;
+      padding: 14px 16px;
+      border-radius: 12px;
+      transition: 0.2s ease;
+    }
+
+    .plan-list a:hover {
+      background: #ffd000;
+      color: #111315;
+      font-weight: bold;
+    }
+
+    .shared-card {
+      background: linear-gradient(135deg, #2b2b2b, #444444);
+      padding: 28px;
+      border-radius: 20px;
+      margin-top: 10px;
+    }
+
+    .shared-card h2 {
+      margin-bottom: 10px;
+    }
+
+    .shared-card p {
+      color: #d6d6d6;
+      margin-bottom: 18px;
+    }
+
+    .shared-card a {
+      display: inline-block;
+      text-decoration: none;
+      background: #ffd000;
+      color: #111315;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: #8a8a8a;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      .section-title {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>LiveEasy</h1>
+    <p class="subtitle">
+      Workout Plans • Diet Plans • Shared Progress System
+    </p>
+
+    <!-- Female Section -->
+    <div class="section">
+      <h2 class="section-title">Female Plans</h2>
+
+      <div class="card">
+        <h3>Month 1</h3>
+
+        <ul class="plan-list">
+          <li>
+            <a href="Female/month1-workout.html">
+              Month 1 Workout Plan
+            </a>
+          </li>
+
+          <li>
+            <a href="Female/month1-diet.html">
+              Month 1 Diet Plan
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Male Section -->
+    <div class="section">
+      <h2 class="section-title">Male Plans</h2>
+
+      <div class="card">
+        <h3>Month 1</h3>
+
+        <ul class="plan-list">
+          <li>
+            <a href="Male/month1-muscle-gain-workout.html">
+              Month 1 Muscle Gain Workout Plan
+            </a>
+          </li>
+
+          <li>
+            <a href="Male/month1-diet.html">
+              Month 1 Diet Plan
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Shared Plan -->
+    <div class="section">
+      <h2 class="section-title">Shared Plans</h2>
+
+      <div class="shared-card">
+        <h2>Shared Diet Plan Comparison</h2>
+
+        <p>
+          Side-by-side comparison of male and female diet plans
+          in an easy-to-follow tabular format.
+        </p>
+
+        <a href="shared-diet-plan.html">
+          Open Shared Diet Plan
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      © 2026 LiveEasy • Personal Fitness & Nutrition Plans
+    </footer>
+
+  </div>
+
+</body>
+</html>
