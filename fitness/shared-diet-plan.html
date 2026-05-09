@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shared Diet Plan - LiveEasy</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #111315;
+      color: #ffffff;
+      min-height: 100vh;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .back-btn {
+      display: inline-block;
+      text-decoration: none;
+      color: #ffd000;
+      margin-bottom: 20px;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+
+    .back-btn:hover {
+      color: #ffffff;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #ffd000;
+      margin-bottom: 15px;
+      margin-top: 40px;
+    }
+
+    h3 {
+      font-size: 22px;
+      color: #ffffff;
+      margin-bottom: 10px;
+      margin-top: 25px;
+    }
+
+    .subtitle {
+      color: #b5b5b5;
+      margin-bottom: 40px;
+      font-size: 18px;
+    }
+
+    .card {
+      background: #1b1d20;
+      border-radius: 18px;
+      padding: 24px;
+      border: 1px solid #2a2d31;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      background: #2a2d31;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 16px;
+      text-align: left;
+      border-bottom: 1px solid #3c4043;
+    }
+
+    th {
+      background: #3c4043;
+      color: #ffd000;
+      font-weight: bold;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background: #34383c;
+    }
+
+    ul.custom-list {
+      list-style-type: disc;
+      padding-left: 20px;
+      color: #d6d6d6;
+    }
+
+    ul.custom-list li {
+      margin-bottom: 8px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    @media (max-width: 600px) {
+      body {
+        padding: 20px 15px;
+      }
+      h1 {
+        font-size: 28px;
+      }
+      h2 {
+        font-size: 22px;
+        margin-top: 25px;
+      }
+      h3 {
+        font-size: 18px;
+        margin-top: 15px;
+      }
+      .subtitle {
+        font-size: 16px;
+        margin-bottom: 25px;
+      }
+      .card {
+        padding: 16px;
+        margin-bottom: 20px;
+      }
+      th, td {
+        padding: 10px;
+        font-size: 14px;
+      }
+      .grid-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+      .back-btn {
+        margin-bottom: 15px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <a href="index.html" class="back-btn">← Back to Dashboard</a>
+    <h1>Shared Diet Plan</h1>
+    <p class="subtitle">Comparison & Shared Strategies</p>
+
+    <div class="card">
+      <h2>Daily Diet Comparison</h2>
+      <div style="overflow-x:auto;">
+        <table>
+          <tr>
+            <th>Meal Time</th>
+            <th>Her Plan (60 kg Beginner Fat Loss)</th>
+            <th>Your Plan (64 kg Muscle Gain)</th>
+          </tr>
+          <tr>
+            <td>Morning</td>
+            <td>Warm water / jeera water / lemon water / plain water</td>
+            <td>Same as hers</td>
+          </tr>
+          <tr>
+            <td>Breakfast Option 1</td>
+            <td>2 moong dal chilla + chutney + curd</td>
+            <td>3 moong dal chilla + chutney + curd + milk</td>
+          </tr>
+          <tr>
+            <td>Breakfast Option 2</td>
+            <td>Oats + milk + banana + seeds</td>
+            <td>Larger oats portion + milk + banana + seeds + peanut butter</td>
+          </tr>
+          <tr>
+            <td>Breakfast Option 3</td>
+            <td>2 idlis + sambar</td>
+            <td>3 idlis + extra sambar</td>
+          </tr>
+          <tr>
+            <td>Breakfast Option 4</td>
+            <td>Besan chilla + curd</td>
+            <td>3 besan chilla + curd</td>
+          </tr>
+          <tr>
+            <td>Breakfast Option 5</td>
+            <td>Peanut butter toast + milk + fruit</td>
+            <td>More toast + milk + fruit + nuts</td>
+          </tr>
+          <tr>
+            <td>Mid-Morning Snack</td>
+            <td>Fruit / buttermilk / coconut water / nuts / roasted chana</td>
+            <td>Banana + peanuts / roasted chana / sprouts / nuts</td>
+          </tr>
+          <tr>
+            <td>Lunch Structure</td>
+            <td>2 rotis + dal + sabzi + curd</td>
+            <td>3 rotis + dal/rajma/chole + sabzi + curd</td>
+          </tr>
+          <tr>
+            <td>Lunch Alternative</td>
+            <td>Rice + sambar + paneer/tofu + salad</td>
+            <td>Bigger rice portion + paneer/tofu/soy chunks + salad</td>
+          </tr>
+          <tr>
+            <td>Protein Focus</td>
+            <td>Paneer, tofu, dal, curd, sprouts, chickpeas</td>
+            <td>Same foods but larger portions + more soy chunks/milk</td>
+          </tr>
+          <tr>
+            <td>Pre-Workout</td>
+            <td>Optional light snack if hungry</td>
+            <td>Banana / coffee + banana / peanut butter toast</td>
+          </tr>
+          <tr>
+            <td>Post-Workout</td>
+            <td>Optional smoothie occasionally</td>
+            <td>Protein smoothie strongly recommended</td>
+          </tr>
+          <tr>
+            <td>Simple Smoothie</td>
+            <td>Milk + banana + oats</td>
+            <td>Milk + banana + oats + peanut butter</td>
+          </tr>
+          <tr>
+            <td>Evening Snack</td>
+            <td>Tea/coffee + makhana / fruit / yogurt / chana</td>
+            <td>Same as hers + extra peanuts/chana if hungry</td>
+          </tr>
+          <tr>
+            <td>Dinner Option 1</td>
+            <td>Khichdi + curd</td>
+            <td>Khichdi + curd + paneer/tofu side</td>
+          </tr>
+          <tr>
+            <td>Dinner Option 2</td>
+            <td>Roti + sabzi + paneer</td>
+            <td>More rotis + sabzi + paneer</td>
+          </tr>
+          <tr>
+            <td>Dinner Option 3</td>
+            <td>Soup + toast + tofu/paneer</td>
+            <td>Larger portion soup + toast + tofu/paneer</td>
+          </tr>
+          <tr>
+            <td>Dinner Option 4</td>
+            <td>Rice + dal + vegetables</td>
+            <td>Bigger rice + dal + vegetables + protein side</td>
+          </tr>
+          <tr>
+            <td>Before Bed</td>
+            <td>Optional milk/curd</td>
+            <td>Milk / curd / nuts recommended</td>
+          </tr>
+          <tr>
+            <td>Water Goal</td>
+            <td>2–2.5L</td>
+            <td>2.5–3L</td>
+          </tr>
+          <tr>
+            <td>Protein Goal</td>
+            <td>70–85g/day</td>
+            <td>100–120g/day</td>
+          </tr>
+          <tr>
+            <td>Weekly Prep</td>
+            <td>Boiled chickpeas, chopped veggies, sprouts, curd, paneer</td>
+            <td>Same prep shared for both</td>
+          </tr>
+          <tr>
+            <td>Flexible Foods</td>
+            <td>Dosa, pizza, desserts occasionally</td>
+            <td>Same as hers</td>
+          </tr>
+          <tr>
+            <td>Main Goal</td>
+            <td>Leaning, toning, consistency</td>
+            <td>Muscle gain, strength, recovery</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Easiest Way To Follow This Together</h2>
+      <p style="color: #d6d6d6; margin-bottom: 15px;">Cook the SAME Base Meals.</p>
+      
+      <div class="grid-container">
+        <div>
+          <h3>Examples:</h3>
+          <ul class="custom-list">
+            <li>Same dal</li>
+            <li>Same sabzi</li>
+            <li>Same rice</li>
+            <li>Same paneer</li>
+            <li>Same smoothie</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Only change:</h3>
+          <ul class="custom-list">
+            <li>Your portion sizes</li>
+            <li>Your protein quantity</li>
+          </ul>
+        </div>
+      </div>
+      
+      <h3 style="margin-top: 30px;">Simple Portion Difference Rule</h3>
+      <div style="overflow-x:auto;">
+        <table style="margin-top: 10px;">
+          <tr>
+            <th>Food</th>
+            <th>Her Portion</th>
+            <th>Your Portion</th>
+          </tr>
+          <tr>
+            <td>Roti</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Rice</td>
+            <td>Medium</td>
+            <td>Large</td>
+          </tr>
+          <tr>
+            <td>Paneer/Tofu</td>
+            <td>Normal</td>
+            <td>Extra serving</td>
+          </tr>
+          <tr>
+            <td>Chilla</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Snacks</td>
+            <td>Light</td>
+            <td>Slightly bigger</td>
+          </tr>
+          <tr>
+            <td>Smoothie</td>
+            <td>Optional</td>
+            <td>Recommended daily after workout</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Best Shared Low-Effort Grocery List</h2>
+      <div class="grid-container">
+        <div>
+          <h3 style="color: #ffd000; margin-top: 0;">Protein</h3>
+          <ul class="custom-list">
+            <li>Paneer & Tofu</li>
+            <li>Curd & Milk</li>
+            <li>Soy chunks</li>
+            <li>Dal, Rajma, Chole</li>
+            <li>Roasted chana</li>
+            <li>Peanut butter</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="color: #ffd000; margin-top: 0;">Carbs</h3>
+          <ul class="custom-list">
+            <li>Rice</li>
+            <li>Roti atta</li>
+            <li>Oats</li>
+            <li>Poha</li>
+            <li>Idli batter</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="color: #ffd000; margin-top: 0;">Snacks & Veggies</h3>
+          <ul class="custom-list">
+            <li>Makhana & Nuts</li>
+            <li>Bananas & Fruits</li>
+            <li>Seasonal vegetables</li>
+            <li>Onions & Tomatoes</li>
+            <li>Cucumbers & Spinach</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
